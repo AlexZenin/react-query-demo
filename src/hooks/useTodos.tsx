@@ -5,7 +5,7 @@ export function useTodos() {
   const todos = useQuery(['example'], fetchTodos)
 
   if (!todos.data) {
-    throw new Error('Expected exampleData to be loaded from parent component')
+    throw new Error('Expected todo data to be loaded from parent component')
   }
 
   return todos
